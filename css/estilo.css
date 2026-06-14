@@ -1,0 +1,345 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    width: 98%;
+    height: 45px;
+    background: rgba(14, 9, 9, 0.8);
+    position: fixed;
+    top: 0;
+    margin-left: 20px;
+
+    /* backdrop-filter: saturate(180%) blur(20px); */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    /* border: 1px solid red; */
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 45px;
+}
+
+.menu a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #ccc;
+}
+
+.loguinho {
+    height: 30px;
+}
+
+.section {
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+
+    margin-left: 20px;
+}
+
+section.apresentacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 650px;
+    /* border: 1px solid blue; */
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.textoJustificado {
+    font-size: 25px;
+    text-align: justify;
+
+}
+
+section.classificacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 2390px;
+    /* border: 1px solid blue; */
+    align-items: center;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+section.classificacao b {
+    color: rgb(197, 30, 30);
+}
+
+section.classificacao abbr {
+    background: yellow;
+}
+
+.titulo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    background: yellow;
+}
+
+.container-classificacao {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    /* align-items: center; */
+    /* border: 1px solid green; */
+}
+
+.col {
+    width: 20%;
+    padding: 10px;
+    border: 1px solid black;
+    margin: 2px;
+}
+
+.classificacaoEstrofe {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* align-items: center; */
+    /* border: 1px solid red; */
+    padding: 5px;
+    margin: 2px;
+}
+
+.col-umaEstrofe {
+    width: 25%;
+    border: 1px solid black;
+    padding: 5px;
+    height: 505px;
+    margin: 2px;
+}
+
+.col-maisDeUmaEstrofe {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.col-maisDeUmaEstrofe p {
+    width: 100%;
+    text-align: center;
+}
+
+.col-estrofe {
+    border: 1px solid rosybrown;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+
+}
+
+.classificacaoOrdVogal {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* align-items: center; */
+    /* border: 1px solid magenta; */
+    padding: 10px;
+    margin-top: 2px;
+}
+
+.col-50 {
+    width: 100%;
+    border: 1px solid black;
+    margin: 2px;
+}
+
+.col-50 p {
+    width: 100%;
+    padding: 2%;
+}
+
+.col-estrofeOrdVogal {
+    width: 100%;
+    padding: 5px;
+    margin: 2px;
+}
+
+.rowOrdVogal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.especificacoes {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    /* align-items: center; */
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+section.criacao p {
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.rowFooter {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 10px;
+    margin: 10px;
+
+
+}
+
+.socials .social-item {
+    display: block;
+    margin: 0 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid blue;
+    color: blue;
+    text-align: center;
+    line-height: 40px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+
+@media (max-width: 800px) {
+    .menu {
+
+        width: auto;
+
+    }
+
+    .menu a {
+        font-size: 12px;
+    }
+
+    .container-classificacao {
+        display: block;
+        justify-content: space-between;
+        flex-direction: row;
+        /* align-items: center; */
+        /* border: 1px solid green; */
+    }
+
+    .col {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        /* border: 1px solid black; */
+    }
+
+    .classificacaoEstrofe {
+        display: block;
+        flex-direction: row;
+        width: 100%;
+        /* align-items: center; */
+        /* border: 1px solid red; */
+        padding: 5px;
+        margin-top: auto;
+    }
+
+    .col-umaEstrofe {
+        width: 100%;
+        text-align: center;
+        /* border: 1px solid black; */
+        padding: 5px;
+        height: 250px;
+        margin: auto;
+    }
+
+    .col-maisDeUmaEstrofe {
+        display: block;
+        flex-direction: column;
+        width: 100%;
+        /* border: 1px solid rgb(104, 53, 53); */
+        padding: 5px;
+        margin: 2px;
+    }
+
+    .col-estrofe {
+        display: block;
+        flex-direction: column;
+        width: 100%;
+        /* border: 1px solid rosybrown; */
+    }
+
+    .row {
+        display: block;
+        justify-content: space-between;
+        flex-direction: row;
+        text-align: center;
+        padding: 10px;
+        margin: 10px;
+        /* border: 1px solid black; */
+
+    }
+
+    .rowOrdVogal {
+        display: block;
+        width: 100%;
+        justify-content: space-between;
+
+        text-align: center;
+        /* border: 1px solid purple; */
+    }
+
+    .especificacoes {
+        display: block;
+        width: 100%;
+        text-align: center;
+        /* border: 1px solid purple; */
+    }
+
+    .colEspecificacoes {
+
+        border: 1px solid black;
+        padding: 10px;
+        margin: 2px;
+    }
+
+    .col-30 {
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    .imagem {
+        width: 70%;
+
+    }
+}
